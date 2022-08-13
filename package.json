@@ -1,0 +1,32 @@
+{
+  "name": "word2number",
+  "version": "1.0.0",
+  "description": "A javascript library that converts numbers written with words to digits",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/endrcn/word2number.git"
+  },
+  "keywords": [
+    "word2number"
+  ],
+  "author": "Ender CAN",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/endrcn/word2number/issues"
+  },
+  "homepage": "https://github.com/endrcn/word2number#readme",
+  "dependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0",
+    "path": "^0.12.7"
+  }
+}
