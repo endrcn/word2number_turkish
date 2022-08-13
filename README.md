@@ -1,2 +1,3 @@
 # word2number
-A word2number library for Turkish numbers
+
+It is a Javascript library that converts numbers written with words to digits.
