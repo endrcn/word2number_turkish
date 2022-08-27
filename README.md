@@ -2,6 +2,18 @@
 
 It is a Javascript library that converts numbers written with words to digits.
 
+## Aim
+
+The first aim is all unit tests are successful.
+
+#### Current Status
+
+**Total**: 31
+
+14 success, 17 fail
+
+![50%](https://progress-bar.dev/45)
+
 ## Author
 
 **Ender CAN**
