@@ -96,37 +96,28 @@ describe(path.basename(__filename, '.js'), function () {
         assert.equal(word2Number.convert("0", false).trim(), "0");
     });
 
-    it('05363858980', function () {
-        assert.equal(word2Number.convert("05363858980", false).trim(), "05363858980");
+    it('05355555555', function () {
+        assert.equal(word2Number.convert("05355555555", false).trim(), "05355555555");
     });
 
-    it('536 385 8980', function () {
-        assert.equal(word2Number.convert("536 385 8980", false).trim(), "536 385 8980");
+    it('535 555 5555', function () {
+        assert.equal(word2Number.convert("535 555 5555", false).trim(), "535 555 5555");
     });
 
-    it('0 536 385 8980', function () {
-        assert.equal(word2Number.convert("0 536 385 8980", false).trim(), "0 536 385 8980");
+    it('0 535 555 5555', function () {
+        assert.equal(word2Number.convert("0 535 555 5555", false).trim(), "0 535 555 5555");
     });
-
-    // TODO: Bunlara bak!
-    /* it('beşyüzotuzaltı v üçyüz v seksenbeş v seksendokuz v seksen', function () {
-        assert.equal(word2Number.convert("beşyüzotuzaltı üçyüz seksenbeş seksendokuz seksen", false).trim(), "536 385 8980");
-    }); */
-
-    /* it('sıfır v beşyüzotuzaltı v üçyüz v seksenbeş v seksendokuz v seksen', function () {
-        assert.equal(word2Number.convert("sıfır v beşyüzotuzaltı v üçyüz v seksenbeş v seksendokuz v seksen", false).trim(), "0 536 385 8980");
-    }); */
 
     it('3d', function () {
         assert.equal(word2Number.convert("3d", false).trim(), "3d");
     });
 
     it('0289', function () {
-        assert.equal(word2Number.convert("0289", false).trim(), "0 289");
+        assert.equal(word2Number.convert("0289", false).trim(), "0289");
     });
 
     it('012', function () {
-        assert.equal(word2Number.convert("012", false).trim(), "0 12");
+        assert.equal(word2Number.convert("012", false).trim(), "012");
     });
 
     it('oniki v sıfırdokuz v ikibinondokuz v tarihli v ekstra v borcum v ne v kadar', function () {
