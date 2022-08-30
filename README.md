@@ -1,15 +1,18 @@
-# word2number for Turkish numbers
+# word2number for numbers written in Turkish
 
 It is a Javascript library that converts numbers written with words to digits.
 
 ## Aim
 
-- [x] Numbers must be handled.
-- [x] Phone numbers must be handled.
-- [x] Zero number must be handled.
-- [x] Numbers that next to each other must be handled.
-- [ ] Dates must be handled.
-- [ ] Decimal numbers must be handled.
+- [x] Handling all written numbers.
+- [x] Handling phone numbers.
+- [x] Handling zero number.
+- [x] Handling numbers that next to each other.
+- [ ] Handling both numeric and written numbers.
+- [ ] Handling Dates.
+- [ ] Handling Decimal numbers.
+- [ ] Handling punctuations.
+
 
 #### Unit Test Status
 
