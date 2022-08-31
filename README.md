@@ -12,6 +12,7 @@ It is a Javascript library that converts numbers written with words to digits.
 - [ ] Handling Dates.
 - [ ] Handling Decimal numbers.
 - [ ] Handling punctuations.
+- [ ] Fuzzy matching.
 
 
 #### Unit Test Status
