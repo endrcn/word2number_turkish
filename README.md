@@ -1,4 +1,4 @@
-# word2number for numbers written in Turkish
+# word2number_turkish
 
 It is a Javascript library that converts numbers written with words to digits.
 
