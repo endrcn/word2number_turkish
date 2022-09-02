@@ -2,13 +2,13 @@
 
 It is a Javascript library that converts numbers written with words to digits.
 
-## Aim
+## To Do
 
 - [x] Handling all written numbers.
 - [x] Handling phone numbers.
 - [x] Handling zero number.
 - [x] Handling numbers that next to each other.
-- [ ] Handling both numeric and written numbers.
+- [x] Handling both numeric and written numbers.
 - [ ] Handling Dates.
 - [ ] Handling Decimal numbers.
 - [ ] Handling punctuations.
@@ -19,9 +19,9 @@ It is a Javascript library that converts numbers written with words to digits.
 
 **Total**: 31
 
-16 success, 15 fail
+28 success, 3 fail
 
-![51%](https://progress-bar.dev/51)
+![90%](https://progress-bar.dev/90)
 
 ## Author
 
