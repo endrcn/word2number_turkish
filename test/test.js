@@ -121,7 +121,11 @@ describe(path.basename(__filename, '.js'), function () {
     });
 
     it('oniki v sıfırdokuz v ikibinondokuz v tarihli v ekstra v borcum v ne v kadar', function () {
-        assert.equal(word2Number.convert("oniki v sıfırdokuz v ikibinondokuz v tarihli v ekstra v borcum v ne v kadar", false).trim(), "12 v 0dokuz v 2019 v tarihli v ekstra v borcum v ne v kadar");
+        assert.equal(word2Number.convert("oniki v sıfırdokuz v ikibinondokuz v tarihli v ekstra v borcum v ne v kadar", false).trim(), "12 v 09 v 2019 v tarihli v ekstra v borcum v ne v kadar");
+    });
+
+    it('oniki v sıfırdokuz v ikibinon sıfırdokuz v tarihli v ekstra v borcum v ne v kadar', function () {
+        assert.equal(word2Number.convert("oniki v sıfırdokuz v ikibinon sıfırdokuz v tarihli v ekstra v borcum v ne v kadar", false).trim(), "12 v 09 v 2010 09 v tarihli v ekstra v borcum v ne v kadar");
     });
 
     it('merhaba, teşekkürler tekrar bekleriz.', function () {
