@@ -1,4 +1,4 @@
-# word2number for numbers written in Turkish
+# word2number_turkish
 
 It is a Javascript library that converts numbers written with words to digits.
 
@@ -12,6 +12,7 @@ It is a Javascript library that converts numbers written with words to digits.
 - [ ] Handling Dates.
 - [ ] Handling Decimal numbers.
 - [ ] Handling punctuations.
+- [ ] Fuzzy matching.
 
 
 #### Unit Test Status
