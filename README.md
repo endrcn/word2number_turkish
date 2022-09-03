@@ -10,18 +10,18 @@ It is a Javascript library that converts numbers written with words to digits.
 - [x] Handling numbers that next to each other.
 - [x] Handling both numeric and written numbers.
 - [x] Handling Dates.
-- [ ] Handling Decimal numbers.
+- [x] Handling Decimal numbers.
 - [ ] Handling punctuations.
 - [ ] Fuzzy matching.
 
 
 #### Unit Test Status
 
-**Total**: 32
+**Total**: 39
 
-30 success, 2 fail
+36 success, 3 fail
 
-![93%](https://progress-bar.dev/93)
+![92%](https://progress-bar.dev/92)
 
 ## Author
 
