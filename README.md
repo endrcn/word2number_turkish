@@ -9,7 +9,7 @@ It is a Javascript library that converts numbers written with words to digits.
 - [x] Handling zero number.
 - [x] Handling numbers that next to each other.
 - [x] Handling both numeric and written numbers.
-- [ ] Handling Dates.
+- [x] Handling Dates.
 - [ ] Handling Decimal numbers.
 - [ ] Handling punctuations.
 - [ ] Fuzzy matching.
@@ -17,11 +17,11 @@ It is a Javascript library that converts numbers written with words to digits.
 
 #### Unit Test Status
 
-**Total**: 31
+**Total**: 32
 
-28 success, 3 fail
+30 success, 2 fail
 
-![90%](https://progress-bar.dev/90)
+![93%](https://progress-bar.dev/93)
 
 ## Author
 
