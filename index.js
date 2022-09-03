@@ -11,4 +11,5 @@ const word2Number = new Word2Number();
 // console.log(word2Number.convert("oniki v sıfırdokuz v ikibinon sıfırdokuz v tarihli v ekstra v borcum v ne v kadar"));
 // console.log(word2Number.convert("iki nokta on beş"));
 // console.log(word2Number.convert("yüzaltmışyedi"));
-console.log(word2Number.convert("6 milyar beş yüz elli milyon iki yüz altı bin üç yüz atmış iki tl"));
+// console.log(word2Number.convert("6 milyar beş yüz elli milyon iki yüz altı bin üç yüz atmış iki tl"));
+console.log(word2Number.convert("6 milyar 999 bin 30 tl"));
