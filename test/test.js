@@ -84,8 +84,8 @@ describe(path.basename(__filename, '.js'), function () {
         assert.equal(word2Number.convert("21.12.2021"), "21.12.2021");
     });
 
-    it('6 milyar 999 bin 30tl', function () {
-        assert.equal(word2Number.convert("6 milyar 999 bin 30tl"), "6000999030 tl");
+    it('6 milyar 999 bin 30 tl', function () {
+        assert.equal(word2Number.convert("6 milyar 999 bin 30 tl"), "6000999030 tl");
     });
 
     it('1a1a1', function () {
