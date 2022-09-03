@@ -11,15 +11,15 @@ It is a Javascript library that converts numbers written with words to digits.
 - [x] Handling both numeric and written numbers.
 - [x] Handling Dates.
 - [x] Handling Decimal numbers.
-- [ ] Handling punctuations.
-- [ ] Fuzzy matching.
+- [x] Fuzzy matching.
+- [ ] Handling half numbers.
 
 
 #### Unit Test Status
 
-**Total**: 39
+**Total**: 41
 
-36 success, 3 fail
+38 success, 3 fail
 
 ![92%](https://progress-bar.dev/92)
 
