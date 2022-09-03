@@ -140,12 +140,12 @@ describe(path.basename(__filename, '.js'), function () {
         assert.equal(word2Number.convert("yüzyirmibeş nokta iki yüz elli iki"), "125.252");
     });
 
-    it('yüz altmış yedi', function () {
+    it('yüz kırk bir', function () {
         assert.equal(word2Number.convert("yüz kırk bir"), "141");
     });
 
-    it('bin yüz altmış yedi', function () {
-        assert.equal(word2Number.convert("bin yüz altmış üç"), "1163");
+    it('bin yüz atmış üç', function () {
+        assert.equal(word2Number.convert("bin yüz atmış üç"), "1163");
     });
 
     it('bin dörtyüz altmış yedi', function () {
@@ -156,8 +156,16 @@ describe(path.basename(__filename, '.js'), function () {
         assert.equal(word2Number.convert("on sekiz buçuk"), "18.5");
     });
 
+    it('yüzonbir buçuk', function () {
+        assert.equal(word2Number.convert("yüzonbir buçuk"), "111.5");
+    });
+
     it('2 milyondan 200 günde ne kadar faiz alırım', function () {
         assert.equal(word2Number.convert("2 milyondan 200 günde ne kadar faiz alırım"), "2000000 dan 200 günde ne kadar faiz alırım");
+    });
+
+    it('2 milyardan üç milyona 200 günde ne kadar faiz alırım', function () {
+        assert.equal(word2Number.convert("2 milyardan üç milyona 200 günde ne kadar faiz alırım"), "2000000000 dan 3000000 a 200 günde ne kadar faiz alırım");
     });
 
 })
