@@ -141,11 +141,11 @@ describe(path.basename(__filename, '.js'), function () {
     });
 
     it('yüz altmış yedi', function () {
-        assert.equal(word2Number.convert("yüz altmış yedi"), "167");
+        assert.equal(word2Number.convert("yüz kırk bir"), "141");
     });
 
     it('bin yüz altmış yedi', function () {
-        assert.equal(word2Number.convert("bin yüz altmış yedi"), "1167");
+        assert.equal(word2Number.convert("bin yüz altmış üç"), "1163");
     });
 
     it('bin dörtyüz altmış yedi', function () {
