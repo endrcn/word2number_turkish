@@ -1,6 +1,6 @@
 {
   "name": "word2number_turkish",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A javascript library that converts numbers written with words to digits",
   "main": "index.js",
   "directories": {
