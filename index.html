@@ -20,7 +20,7 @@
         }
 
         function findNumbers() {
-            let sentence = document.getElementById("sentence").value;
+            let sentence = document.getElementById("sentence").value.toLocaleLowerCase("tr-TR");
             let words = word2Number.splitSentenceToWords(sentence);
             let indexes = word2Number.findNumbersIndexes(words);
             document.getElementById("result").value = "";
