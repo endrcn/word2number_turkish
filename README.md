@@ -1,6 +1,6 @@
 # word2number_turkish
 
-[![npm version](https://badge.fury.io/js/word2number_turkish.svg)](//npmjs.com/package/word2number_turkish)
+[![NPM version](https://img.shields.io/npm/v/word2number_turkish.svg)](https://www.npmjs.com/package/word2number_turkish)
 
 It is a Javascript library that converts numbers written with words to digits.
 
