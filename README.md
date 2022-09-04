@@ -19,9 +19,9 @@ It is a Javascript library that converts numbers written with words to digits.
 
 **Total**: 41
 
-38 success, 3 fail
+39 success, 2 fail
 
-![92%](https://progress-bar.dev/92)
+![95%](https://progress-bar.dev/95)
 
 ## Author
 
