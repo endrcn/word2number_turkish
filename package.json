@@ -1,5 +1,5 @@
 {
-  "name": "word2number",
+  "name": "word2number_turkish",
   "version": "1.0.0",
   "description": "A javascript library that converts numbers written with words to digits",
   "main": "index.js",
@@ -16,7 +16,10 @@
     "url": "git+https://github.com/endrcn/word2number.git"
   },
   "keywords": [
-    "word2number"
+    "word2number",
+    "word-to-number",
+    "word-to-number-turkish",
+    "word2number_turkish"
   ],
   "author": "Ender CAN",
   "license": "MIT",
