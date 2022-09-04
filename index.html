@@ -19,6 +19,17 @@
             document.getElementById("result").value = word2Number.convert(sentence);
         }
 
+        function findNumbers() {
+            let sentence = document.getElementById("sentence").value;
+            let words = word2Number.splitSentenceToWords(sentence);
+            let indexes = word2Number.findNumbersIndexes(words);
+            document.getElementById("result").value = "";
+            for (let i = 0; i < indexes.length; i++) {
+                let numberWords = words.slice(indexes[i].startIndex, indexes[i].endIndex + 1);
+                document.getElementById("result").value += numberWords.join(" ") + " => startIndex=" + indexes[i].startIndex + " endIndex=" + indexes[i].endIndex + "\n";
+            }
+        }
+
     </script>
 </head>
 
@@ -41,6 +52,7 @@
         </div>
         <div class="mb-3">
             <button type="submit" onclick="convert()" class="btn btn-primary pull-right">Çevir</button>
+            <button type="submit" onclick="findNumbers()" class="btn btn-primary pull-right">Sayıları Getir</button>
         </div>
 
         <div class="md-3">
@@ -49,7 +61,7 @@
 
         <div class="mb-3">
             <label for="sentence" class="form-label">Sonuç</label>
-            <textarea class="form-control" id="result" rows="3" disabled></textarea>
+            <textarea class="form-control" id="result" rows="5" disabled></textarea>
         </div>
 
     </div>
