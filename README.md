@@ -54,13 +54,13 @@ https://endrcn.github.io/word2number_turkish/
 - [x] Handling Dates.
 - [x] Handling Decimal numbers.
 - [x] Fuzzy matching.
-- [ ] Handling half numbers.
+- [x] Handling half numbers.
 
 #### Unit Test Status
 
 **Total**: 41
 
-39 success, 2 fail
+41 success
 
 ![95%](https://progress-bar.dev/95)
 
