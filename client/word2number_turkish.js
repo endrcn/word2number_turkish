@@ -139,6 +139,10 @@ class Word2Number {
         return this.decimalSplitter[word];
     }
 
+    getHalfNumberRegex() {
+        return /\s*bu[cCçÇ]uk/gi;
+    }
+
     __getMagnitudeWordsRegex() {
         return new RegExp("(" + this.magnitudeWords.join("|") + "|" + this.hundredWords.join("|") + ")", "ig");
     }
@@ -229,9 +233,15 @@ class Word2Number {
     }
 
     putDecimalSplitters(text = "") {
-        return text.replace(this.__getDecimalSplitterRegex(), (input, splitterWord) => {
+        let sentence = text.replace(this.__getDecimalSplitterRegex(), (input, splitterWord) => {
             return input.replace(splitterWord, this.getDecimalSplitterValue(splitterWord.trim()));
+        });
+
+        sentence = sentence.replace(this.getHalfNumberRegex(), (input) => {
+            return ".5";
         })
+
+        return sentence;
     }
 
     createSynonyms() {
