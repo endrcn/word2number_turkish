@@ -24,7 +24,7 @@
     "url": "https://github.com/endrcn/word2number/issues"
   },
   "homepage": "https://github.com/endrcn/word2number#readme",
-  "dependencies": {
+  "devDependencies": {
     "chai": "^4.3.6",
     "mocha": "^10.0.0",
     "path": "^0.12.7"
