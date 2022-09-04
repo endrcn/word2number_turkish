@@ -62,7 +62,7 @@ https://endrcn.github.io/word2number_turkish/
 
 41 success
 
-![95%](https://progress-bar.dev/95)
+![100%](https://progress-bar.dev/100)
 
 ## Author
 
