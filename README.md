@@ -1,6 +1,30 @@
 # word2number_turkish
 
+[![npm version](https://badge.fury.io/js/word2number_turkish.svg)](//npmjs.com/package/word2number_turkish)
+
 It is a Javascript library that converts numbers written with words to digits.
+
+## Installation
+
+```
+npm install --save word2number_turkish
+```
+
+## Usage
+
+```js
+const word2Number = require("word2number_turkish");
+console.log(word2Number.convert("yüzaltmışyedi"));
+```
+
+You can extract numbers' indexes from sentences.
+```js
+const word2Number = require("word2number_turkish");
+let words = word2Number.splitSentenceToWords("sekizyüz on iki milyar üç yüz kırk dört milyon beşyüz yetmişikibin dörtyüz bir lira otuz iki kuruş");
+console.log(word2Number.findNumbersIndexes(words));
+// Output: [ { startIndex: 0, endIndex: 17 }, { startIndex: 19, endIndex: 20 } ]
+```
+
 
 ## To Do
 
