@@ -10,7 +10,7 @@ It is a Javascript library that converts numbers written with words to digits.
 npm install --save word2number_turkish
 ```
 
-## Usage
+## Usage in Backend
 
 ```js
 const word2Number = require("word2number_turkish");
@@ -18,6 +18,7 @@ console.log(word2Number.convert("yüzaltmışyedi"));
 ```
 
 You can extract numbers' indexes from sentences.
+
 ```js
 const word2Number = require("word2number_turkish");
 let words = word2Number.splitSentenceToWords("sekizyüz on iki milyar üç yüz kırk dört milyon beşyüz yetmişikibin dörtyüz bir lira otuz iki kuruş");
@@ -25,6 +26,23 @@ console.log(word2Number.findNumbersIndexes(words));
 // Output: [ { startIndex: 0, endIndex: 17 }, { startIndex: 19, endIndex: 20 } ]
 ```
 
+## Usage in Frontend
+
+Put the script(client/word2number_turkish.js) between the head tags in your website. After that you can use the library.
+
+```html
+<script src="./client/word2number_turkish.js"></script>
+<script>
+    const word2Number = new Word2Number();
+    console.log(word2Number.convert("yüzyetmişiki lira on iki nokta üç kuruş"));
+</script>
+```
+
+The word2number_turkish library was developed using ES6 classes.
+
+## Test
+
+https://endrcn.github.io/word2number_turkish/
 
 ## To Do
 
@@ -37,7 +55,6 @@ console.log(word2Number.findNumbersIndexes(words));
 - [x] Handling Decimal numbers.
 - [x] Fuzzy matching.
 - [ ] Handling half numbers.
-
 
 #### Unit Test Status
 
