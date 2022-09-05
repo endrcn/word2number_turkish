@@ -58,11 +58,11 @@ https://endrcn.github.io/word2number_turkish/
 
 #### Unit Test Status
 
-**Total**: 41
+**Total**: 45
 
-41 success
+44 success, 1 fail
 
-![100%](https://progress-bar.dev/100)
+![97%](https://progress-bar.dev/97)
 
 ## Author
 
