@@ -168,4 +168,20 @@ describe(path.basename(__filename, '.js'), function () {
         assert.equal(word2Number.convert("2 milyardan üç milyona 200 günde ne kadar faiz alırım"), "2000000000 dan 3000000 a 200 günde ne kadar faiz alırım");
     });
 
+    it('bir nokta iki', function () {
+        assert.equal(word2Number.convert("bir nokta iki"), "1.2");
+    });
+
+    it('iki nokta on', function () {
+        assert.equal(word2Number.convert("iki nokta on"), "2.10");
+    });
+
+    it('ben binali', function () {
+        assert.equal(word2Number.convert("ben binali"), "ben binali");
+    });
+
+    it('yüz yirmi dokuz ve iki yüz elli olmadı yedi', function () {
+        assert.equal(word2Number.convert("yüz yirmi dokuz ve iki yüz elli olmadı yedi"), "129 ve 250 olmadı 7");
+    });
+
 })
