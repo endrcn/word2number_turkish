@@ -176,12 +176,20 @@ describe(path.basename(__filename, '.js'), function () {
         assert.equal(word2Number.convert("iki nokta on"), "2.10");
     });
 
+    it('yetmis bes', function () {
+        assert.equal(word2Number.convert("yetmis bes"), "75");
+    });
+
     it('ben binali', function () {
         assert.equal(word2Number.convert("ben binali"), "ben binali");
     });
 
     it('yüz yirmi dokuz ve iki yüz elli olmadı yedi', function () {
         assert.equal(word2Number.convert("yüz yirmi dokuz ve iki yüz elli olmadı yedi"), "129 ve 250 olmadı 7");
+    });
+
+    it('Onikisifirikiikibiniki', function () {
+        assert.equal(word2Number.convert("Onikisifirikiikibiniki"), "12 02 2002");
     });
 
 })
