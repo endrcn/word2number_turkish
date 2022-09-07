@@ -192,4 +192,16 @@ describe(path.basename(__filename, '.js'), function () {
         assert.equal(word2Number.convert("Onikisifirikiikibiniki"), "12 02 2002");
     });
 
+    it('üççyüzbintl', function () {
+        assert.equal(word2Number.convert("üççyüzbintl"), "300000 tl");
+    });
+
+    it('üççüzbintl', function () {
+        assert.equal(word2Number.convert("üççüzbintl"), "300000 tl");
+    });
+
+    it('dörtüzikibintl', function () {
+        assert.equal(word2Number.convert("dörtüzikibintl"), "402000 tl");
+    });
+
 })
