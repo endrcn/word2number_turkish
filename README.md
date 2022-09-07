@@ -56,13 +56,17 @@ https://endrcn.github.io/word2number_turkish/
 - [x] Fuzzy matching.
 - [x] Handling half numbers.
 
-#### Unit Test Status
+### Unit Test Status
 
-**Total**: 45
+**Total**: 50
 
-44 success, 1 fail
+49 success, 1 fail
 
-![97%](https://progress-bar.dev/97)
+![98%](https://progress-bar.dev/98)
+
+### Known Issues
+
+1. This library converts some words like "binali" to "1000 ali"
 
 ## Author
 
