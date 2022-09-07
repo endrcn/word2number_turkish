@@ -66,7 +66,7 @@ https://endrcn.github.io/word2number_turkish/
 
 ### Known Issues
 
-1. This library converts some words like "binali" to "1000 ali"
+* This library converts some words like "binali" to "1000 ali"
 
 ## Author
 
