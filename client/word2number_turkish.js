@@ -69,7 +69,7 @@ class Word2Number {
         let indexes = this.findNumbersIndexes(words);
         for (let i = indexes.length - 1; i >= 0; i--) {
             let numberWords = words.slice(indexes[i].startIndex, indexes[i].endIndex + 1);
-            let number = this.converToNumber(numberWords);
+            let number = this.__converToNumber(numberWords);
             words.splice(indexes[i].startIndex, indexes[i].endIndex + 1 - indexes[i].startIndex, number);
         }
 
@@ -80,7 +80,7 @@ class Word2Number {
         return sentence;
     }
 
-    converToNumber(numberWords) {
+    __converToNumber(numberWords) {
         let totalValue = 0;
         let localValue = 0;
         let zeroNumber = "";
