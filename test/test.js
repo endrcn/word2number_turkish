@@ -204,4 +204,8 @@ describe(path.basename(__filename, '.js'), function () {
         assert.equal(word2Number.convert("dörtüzikibintl"), "402000 tl");
     });
 
+    it('sıfırikiikibiniki', function () {
+        assert.equal(word2Number.convert("sıfırikiikibiniki"), "02 2002");
+    });
+
 })
