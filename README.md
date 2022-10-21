@@ -58,15 +58,11 @@ https://endrcn.github.io/word2number_turkish/
 
 ### Unit Test Status
 
-**Total**: 50
+**Total**: 51
 
-49 success, 1 fail
+51 success
 
-![98%](https://progress-bar.dev/98)
-
-### Known Issues
-
-* This library converts some words like "binali" to "1000 ali"
+![100%](https://progress-bar.dev/100)
 
 ## Author
 
