@@ -8,7 +8,6 @@ const Enum = {
         "NUMBER": 2
     }
 };
-
 class Word2Number {
     constructor() {
         this.magnitude = {
@@ -53,6 +52,10 @@ class Word2Number {
             "nokta": ".",
             "virgül": ","
         }
+
+        this.currencies = ["tl", "dolar", "usd", "euro", "eur", "sterlin", "yuan", "ruble", "altın"];
+
+        this.suffixes = ["de", "da", "te", "ta", "den", "dan", "ten", "tan", "e", "a", "ü", "u"];
 
         this.digitWords = Object.keys(this.digits);
         this.tenWords = Object.keys(this.tens);
@@ -132,7 +135,15 @@ class Word2Number {
     }
 
     __getDigitWordsRegex() {
-        return new RegExp("(" + this.zeroWords.join("|") + "|" + this.magnitudeWords.join("|") + "|" + this.digitWords.join("|") + "|" + this.hundredWords.join("|") + "|" + this.tenWords.join("|") + "|(?:\\s|^)[0-9]+(?:\\s|$)" + ")", "ig");
+        return new RegExp("(?:(?:^|\\s)(" + this.zeroWords.join("|") + "|" + this.magnitudeWords.join("|") + "|" + this.digitWords.join("|") + "|" + this.hundredWords.join("|") + "|" + this.tenWords.join("|") + "|[0-9]+" + ")(?:\\s|$))", "ig");
+    }
+
+    __getDigitWordsForSplit() {
+        return new RegExp("(" + this.zeroWords.map(w => w + this.__getSuffixWordsRegex()).join("|") + "|" + this.magnitudeWords.map(w => w + this.__getSuffixWordsRegex()).join("|") + "|" + this.digitWords.map(w => w + this.__getSuffixWordsRegex()).join("|") + "|" + this.hundredWords.map(w => w + this.__getSuffixWordsRegex()).join("|") + "|" + this.tenWords.map(w => w + this.__getSuffixWordsRegex()).join("|") + "|[0-9]+" + this.__getSuffixWordsRegex() + "|(?:\\s|^)[0-9]+(?:\\s|$)" + ")", "ig");
+    }
+
+    __getSuffixWordsRegex() {
+        return "(?=" + this.zeroWords.join("|") + "|" + this.magnitudeWords.join("|") + "|" + this.digitWords.join("|") + "|" + this.hundredWords.join("|") + "|" + this.tenWords.join("|") + "|" + this.currencies.join("|") + "|" + this.suffixes.map(x => x + "(?:$|\\s)").join("|") + "|(?:\\s|^)[0-9]+(?:\\s|$)" + ")";
     }
 
     __getDecimalSplitterRegex() {
@@ -152,7 +163,7 @@ class Word2Number {
     }
 
     splitSentenceToWords(text) {
-        return text.replace(this.__getDigitWordsRegex(), " $1 ").trim().replace(/\s{2,}/g, " ").split(" ");
+        return text.replace(this.__getDigitWordsForSplit(), " $1 ").trim().replace(/\s{2,}/g, " ").split(" ");
     }
 
     findNumbersIndexes(words) {
