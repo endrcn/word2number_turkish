@@ -208,4 +208,16 @@ describe(path.basename(__filename, '.js'), function () {
         assert.equal(word2Number.convert("sıfırikiikibiniki"), "02 2002");
     });
 
+    it('26FZ6A', function () {
+        assert.equal(word2Number.convert("26FZ6A"), "26fz6a");
+    });
+
+    it('2yüz', function () {
+        assert.equal(word2Number.convert("2yüz"), "200");
+    });
+
+    it('2bin60', function () {
+        assert.equal(word2Number.convert("2bin60"), "2060");
+    });
+
 })
