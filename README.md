@@ -58,11 +58,15 @@ https://endrcn.github.io/word2number_turkish/
 
 ### Unit Test Status
 
-**Total**: 51
+**Total**: 54
 
-51 success
+52 success, 2 fail
 
-![100%](https://progress-bar.dev/100)
+![96%](https://progress-bar.dev/96)
+
+### Known Issues
+- [ ] "26FZ6A" is changed to "0 26fz 6 a"
+- [ ] "2bin60" is changed to "2 bin60"
 
 ## Author
 
